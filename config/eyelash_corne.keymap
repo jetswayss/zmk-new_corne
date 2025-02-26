@@ -62,7 +62,7 @@
 &kp ESC  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp C_MUTE              &to 4              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LGUI
                              &kp LEFT_SHIFT  &kp LCTRL  &lt 2 SPACE                                              &lt 3 ENTER  &mo 1  &kp LEFT_SHIFT
             >;
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
         };
 
         lower_layer {
@@ -73,7 +73,7 @@
 &trans  &trans  &trans  &trans        &trans        &trans &trans                    &trans                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &kp END   &kp PG_DN
                                          &trans        &trans        &kp SPACE                                                                         &kp ENTER          &trans          &trans
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
         };
 
         raise_layer {
@@ -84,7 +84,7 @@
 &trans  &trans  &trans  &none      &none      &trans  &trans                    &trans                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                                     &trans     &trans     &kp SPACE                                                            &kp ENTER    &trans     &trans
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         layer_3 {
@@ -95,7 +95,7 @@
 &trans  &trans  &trans      &trans  &trans     &trans  &trans                    &trans                   &trans       &trans     &trans  &trans  &trans   &trans
                                 &trans      &trans      &kp SPACE                                                                   &kp ENTER       &trans     &trans
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
          util_layer {
@@ -106,7 +106,7 @@
 &trans  &trans  &trans  &trans        &trans        &trans &trans                    &trans                   &trans  &trans  &trans  &trans  &trans   &trans
                                          &trans        &trans        &kp SPACE                                                                         &kp ENTER          &trans          &trans
             >;
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
     };
 };
