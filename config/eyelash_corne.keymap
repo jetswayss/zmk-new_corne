@@ -59,7 +59,7 @@
             bindings = <
 &kp TAB    &kp Q  &kp W      &kp E     &kp R  &kp T                              &to 3                &kp Y        &kp U  &kp I      &kp O    &kp P     &kp BSPC
 &td0       &kp A  &kp S      &kp D     &kp F  &kp G                    &to 2 &to 0  &to 1  &kp H        &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp ESC  &kp Z  &kp X      &kp C     &kp V  &kp B       &kp C_MUTE              &to 4              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LGUI
+&kp ESC  &kp Z  &kp X      &kp C     &kp V  &kp B       &mo 1              &to 4              &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp LGUI
                              &kp LALT  &mo 2 &mt LCTRL SPACE                                              &lt 3 ENTER  &mo 1  &kp LEFT_SHIFT
             >;
             sensor-bindings = <&inc_dec_kp LC(TAB) LS(LC(TAB))>;
@@ -70,10 +70,10 @@
             bindings = <
 &kp GRAVE  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                        &trans                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
 &trans  &trans   &trans    &trans  &trans  &trans                           &trans  &trans       &trans  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans  &trans
-&trans  &trans  &trans  &trans        &trans        &trans &trans                    &trans                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans   &trans
+&trans  &trans  &trans  &trans        &trans        &trans &kp LALT                    &trans                   &kp HOME  &kp PG_DN  &kp PG_UP  &kp END  &trans   &trans
                                          &trans        &trans        &kp SPACE                                                                         &kp ENTER          &trans          &trans
             >;
-            sensor-bindings = <&inc_dec_kp LA(TAB) LA(LS(TAB))>;
+            sensor-bindings = <&inc_dec_kp TAB LS(TAB)>;
         };
 
         raise_layer {
@@ -92,7 +92,7 @@
             bindings = <
 &studio_unlock   &kp F1      &kp F2      &kp F3       &kp F4     &kp F5                                  &trans                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
 &trans  &trans      &mkp LCLK   &mkp MCLK    &mkp RCLK  &trans                &trans  &trans       &trans  &trans  &mkp LCLK  &mkp MCLK    &mkp RCLK   &trans  &kp F12
-&trans  &trans  &trans      &trans  &trans     &trans  &trans                    &trans                   &trans       &trans     &trans  &trans  &trans   &trans
+&trans  &trans  &trans      &trans  &trans     &trans  &kp C_MUTE                    &trans                   &trans       &trans     &trans  &trans  &trans   &trans
                                 &trans      &trans      &kp SPACE                                                                   &kp ENTER       &trans     &trans
             >;
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
